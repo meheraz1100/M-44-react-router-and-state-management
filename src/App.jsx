@@ -1,12 +1,15 @@
-import './App.css'
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+// import DaisyNav from "./components/DaisyNav/DaisyNav";
 
 function App() {
-
   return (
     <>
-      <h1 className='text-7xl'>Vite + React</h1>
+      {/* <DaisyNav></DaisyNav> */}
+      <Navbar></Navbar>
+      <h1 className="text-7xl">Price Options</h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
