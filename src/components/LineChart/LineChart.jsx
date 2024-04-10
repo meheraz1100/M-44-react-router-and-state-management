@@ -14,16 +14,14 @@ const LineChart = () => {
         { id: 9, name: 'Ian', physics: 87, chemistry: 89, math: 84 },
         { id: 10, name: 'Jack', physics: 90, chemistry: 88, math: 92 }
     ];
-      
 
     return (
         <div>
-            <LChart width={500} height={400} data={subjectMarksData}>
+            <LChart width={800} height={400} data={subjectMarksData}>
                 <XAxis dataKey="name" />
-                <YAxis dataKey=""/>
+                <YAxis></YAxis>
                 <Line dataKey="math" stroke='red'></Line>
-                <Line dataKey="chemistry" stroke='yellow'></Line>
-                <Line dataKey="physics"></Line>
+                <Line dataKey={'physics'} stroke='yellow'></Line>
             </LChart>
         </div>
     );
